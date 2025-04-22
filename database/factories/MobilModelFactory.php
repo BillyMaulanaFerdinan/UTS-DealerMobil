@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Factories\Factory;
 /**
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\MobilModel>
  */
-class MobilFactory extends Factory
+class MobilModelFactory extends Factory
 {
     /**
      * Define the model's default state.

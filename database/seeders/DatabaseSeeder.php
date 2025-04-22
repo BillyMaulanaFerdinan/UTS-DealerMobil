@@ -3,7 +3,7 @@
 namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
-use Database\Factories\MobilFactory;
+use Database\Factories\MobilModelFactory;
 use Database\Factories\UserFactory;
 use Illuminate\Database\Seeder;
 
