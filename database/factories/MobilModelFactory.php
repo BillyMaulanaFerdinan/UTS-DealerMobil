@@ -21,7 +21,7 @@ class MobilModelFactory extends Factory
     {
         return [
             'merek' => $this->faker->randomElement(['Nissan', 'Toyota', 'Daihatsu', 'Subaru', 'Suzuki']),
-            'nama' => $this->faker->word() . ' ' . $this->faker->numerify('A##'), //menggunakan library faker
+            'nama' => $this->faker->word() . ' ' . $this->faker->numerify('###'), //menggunakan library faker
             'kode_mesin' => $this->faker->unique()->numerify('###############'), // 15 digit
             'warna' => $this->faker->randomElement(['Hitam', 'Putih', 'Merah', 'Biru', 'Silver']),
             'harga' => $this->faker->numberBetween(100000000, 500000000), // harga dalam IDR

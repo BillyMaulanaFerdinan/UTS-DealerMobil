@@ -8,5 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class MobilModel extends Model
 {
     use HasFactory;
-    protected $table = 'laravel.mobil';
+    protected $table = 'mobil';
+    protected $primaryKey = 'mobil_id';
+    protected $fillable = ['merek', 'nama', 'kode_mesin', 'warna', 'kondisi', 'harga'];
 }
