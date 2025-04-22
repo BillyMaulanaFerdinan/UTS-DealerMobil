@@ -21,13 +21,12 @@ class UserFactory extends Factory
      *
      * @return array<string, mixed>
      */
+    protected $model = \App\Models\User::class;
     public function definition(): array
     {
         return [
-            'name' => fake()->name(),
-            'email' => fake()->unique()->safeEmail(),
-            'email_verified_at' => now(),
-            'password' => static::$password ??= Hash::make('password'),
+            'username' => 'admin',
+            'password' => static::$password ??= Hash::make('admin'),
             'remember_token' => Str::random(10),
         ];
     }
